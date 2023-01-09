@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-"""My integer"""
-
-
 class MyInt(int):
-        """A class that inherits from int"""
+    """ Class that inherits from class int"""
 
-            def __eq__(self, value):
-                        """Not equating the operator"""
-                                return self.real != value
+    def __eq__(self, other):
+        """ Method that returns != check """
+        return int.__ne__(self, other)
 
-                                def __ne__(self, value):
-                                            """Equating the operator"""
-                                                    return self.real == value
+    def __ne__(self, other):
+        """ Method that returns == check """
+        return int.__eq__(self, other)
